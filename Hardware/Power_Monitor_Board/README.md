@@ -37,5 +37,5 @@
 
 [監視アプリ](../../Software/I2C_Debugger/README.md)が取得と記録、[Grafana](../../Software/Grafana/README.md)が履歴表示を担当します。ノード状態と電源値の自動対応付けは現時点では実装されていません。
 
-+詳細：[英語版：接続、部品表、測定と保護の制約](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Hardware/Power_Monitor_Board/README.md)+
-+[ハードウェア一覧へ戻る](../README.md)
+詳細：[英語版：接続、部品表、測定と保護の制約](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Hardware/Power_Monitor_Board/README.md)
+[ハードウェア一覧へ戻る](../README.md)
