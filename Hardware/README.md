@@ -37,4 +37,4 @@ I²Cの配線変更は、コネクタだけでなく配線距離、容量、プ�
 
 詳細：[英語版ハードウェア概要](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Hardware/README.md)
 
-+[READMEへ戻る](../README.md)
+[READMEへ戻る](../README.md)
