@@ -2,6 +2,19 @@
 
 > 卓上サイズで工場工程を再現し、機構・組み込み制御・ソフトウェア・監視・データ可視化までを一つにつないだ、組み替え可能なPoCシステムです。
 
+## 読みたい内容から探す
+
+| 読みたい内容 | 日本語資料 |
+|---|---|
+| 構成と各要素の役割分担を知りたい | [システム全体像](./Docs/システム全体像.md) |
+| 通信・ファームウェア・監視の技術要点を確認したい | [技術概要と実装資料への案内](./Docs/技術概要.md) |
+| 色分け仕分けの工程を知りたい | [仕分けデモ](./Docs/仕分けデモ.md) |
+| 複数の装置を順番に動かす工程を知りたい | [スタンプ工程](./Docs/スタンプ工程.md) |
+| 設計上の選択理由と制約を知りたい | [設計時に考えたこと](./Docs/設計時に考えたこと.md) |
+| 実機で見つかった課題と改善判断を知りたい | [実際に作って分かったこと](./Docs/実際に作って分かったこと.md) |
+
+採用担当者の方は、このREADMEから全体像とデモを確認できます。技術面を確認する方は「技術概要」から、必要な仕様・コード・回路資料へ進めます。
+
 ## このプロジェクトについて
 
 Modular Factory Systemは、小規模な工場工程を卓上で再現し、システム全体の構成や役割分担を物理モデルを使って確認するために作成したプロトタイプです。
@@ -337,43 +350,23 @@ Grafana自体はデータの可視化のみを担当し、装置に対して制�
 
 ## 技術資料について
 
-このリポジトリは、システムの概要や設計意図を日本語で説明することを主な目的としています。
+このリポジトリでは、システムの概要・設計意図に加え、技術構成の要点を日本語で説明しています。
 
-詳細な技術情報は英語版リポジトリにまとめています。
+まず[技術概要と実装資料への案内](./Docs/技術概要.md)で、役割分担、I²C通信、ファームウェア、監視・記録の仕組みを確認できます。詳細な技術仕様とソースコードは[英語版リポジトリ](https://github.com/hidem1129-oss/Modular-Factory-System)で管理しています。
 
-### English Technical Repository
+| 確認する内容 | 詳細資料（英語） |
+|---|---|
+| システムの責任分担と制御フロー | [System Architecture](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Docs/System_Architecture/README.md) |
+| 通信レジスタと指示・完了の仕様 | [Register Map](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Docs/Register_Map/README.md) |
+| Picoの共通処理とノード固有処理 | [Firmware](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Firmware/README.md) |
+| 状態監視、通信断の判定、SQLiteへの記録 | [I²C Debugger](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Software/I2C_Debugger/README.md) |
+| 保存した状態・電源データの可視化 | [Grafana](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Software/Grafana/README.md) |
+| 基板、回路図、Gerber、部品表 | [Hardware](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Hardware/README.md) |
+| 基板製作に関する情報 | [Manufacturing](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Hardware/Manufacturing/README.md) |
+| 代替案・制約を含む設計判断 | [Architecture Decision Log](https://github.com/hidem1129-oss/Modular-Factory-System/tree/main/ADL) |
+| 配線と操作性の課題、改修を保留した理由 | [Design Review](https://github.com/hidem1129-oss/Modular-Factory-System/blob/main/Docs/Design_Reviews/Control_Module_Interconnection_and_Operational_Feedback.md) |
 
-[Modular Factory System](https://github.com/hidem1129-oss/Modular-Factory-System)
-
-英語版では、
-
-* Hardware
-* Firmware
-* Software
-* Register Map
-* System Architecture
-* Use Cases
-* Architecture Decision Log
-* Manufacturing information
-* Design Reviews
-
-などを公開しています。
-
-技術仕様や実装の詳細を確認したい場合は、英語版を参照してください。
-
----
-
-## 今後追加予定の内容
-
-日本語版では今後、
-
-* システム全体像の詳しい説明
-* 仕分けデモ
-* スタンプ工程
-* 設計時に考えたこと
-* 実際に作って分かったこと
-
-などを、技術仕様よりも「なぜそうしたのか」を中心に整理する予定です。
+日本語の説明から詳細資料へ進める構成とし、仕様や実装に差がある場合は現在のソースコードを確認する方針です。
 
 ---
 
