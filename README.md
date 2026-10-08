@@ -15,6 +15,16 @@
 
 採用担当者の方は、このREADMEから全体像とデモを確認できます。技術面を確認する方は「技術概要」から、必要な仕様・コード・回路資料へ進めます。
 
+## 分野別の技術資料
+
+概要を把握した後は、次の日本語資料で構成・インターフェース・動作・制約を確認できます。回路図、Gerber、ソースコードなどの実装資料は英語版で管理し、各ページから案内します。
+
+| 分野 | 日本語資料 | 主な詳細ページ |
+|---|---|---|
+| ハードウェア | [基板構成と接続](./Hardware/README.md) | [共通制御基板](./Hardware/Controller_Board/README.md)、[電源分配・監視](./Hardware/Power_Monitor_Board/README.md)、[製作・調達](./Hardware/Manufacturing/README.md) |
+| ファームウェア | [Picoの制御構成](./Firmware/README.md) | [共通処理、状態、指示と完了](./Firmware/common/README.md) |
+| ソフトウェア | [監視・記録・可視化の構成](./Software/README.md) | [I²C Debugger](./Software/I2C_Debugger/README.md)、[Grafana](./Software/Grafana/README.md) |
+
 ## このプロジェクトについて
 
 Modular Factory Systemは、小規模な工場工程を卓上で再現し、システム全体の構成や役割分担を物理モデルを使って確認するために作成したプロトタイプです。
